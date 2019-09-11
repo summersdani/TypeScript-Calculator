@@ -1,0 +1,64 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/tsScripts.js"></script>
+    <link href="~/style.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <header>
+        <h2>Simple Calculator</h2>
+    </header>
+    <div class="calc-container">
+        <form name="form">
+            <div class="calc-group">
+                <input type="text" class="calc-input" id="calcInput" readonly />
+            </div>
+
+            <div id="calcBtns">
+                <div class="calc-group">
+                    <input type="button" value="1" class="digit calc-btn" />
+                    <input type="button" value="2" class="digit calc-btn" />
+                    <input type="button" value="3" class="digit calc-btn" />
+                    <input type="button" value="+" class="calc-operator calc-btn" />
+                </div>
+
+                <div class="calc-group">
+                    <input type="button" value="4" class="digit calc-btn" />
+                    <input type="button" value="5" class="digit calc-btn" />
+                    <input type="button" value="6" class="digit calc-btn" />
+                    <input type="button" value="-" class="calc-operator calc-btn" />
+                </div>
+
+                <div class="calc-group">
+                    <input type="button" value="7" class="digit calc-btn" />
+                    <input type="button" value="8" class="digit calc-btn" />
+                    <input type="button" value="9" class="digit calc-btn" />
+                    <input type="button" value="*" class="calc-operator calc-btn" />
+                </div>
+
+                <div class="calc-group">
+                    <input type="button" value="0" class="digit calc-btn" />
+                    <input type="button" value="." class="digit calc-btn" id="decimal" />
+                    <input type="button" value="c" class="digit calc-clear" id="clear" />
+                    <input type="button" value="/" class="calc-operator calc-btn" />
+                </div>
+                <div class="calc-group">
+                    <input type="button" value="Enter" class="eval-btn" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <hr />
+        <p>&copy; @DateTime.Now.Year - Simple Calculator | by <a href="https://danibsummers.com">Danielle Summers</a></p>
+    </footer>
+</body>
+</html>
